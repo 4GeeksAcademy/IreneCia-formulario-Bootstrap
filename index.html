@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+</head>
+
+<body>
+    <div class="w-100 vh-100 d-flex justify-content-center align-items-center">
+        <div class="card text-start container px-0">
+            <!-- Card header -->
+            <div class="card-header">
+                <h2>Payment form example</h2>
+            </div>
+
+            <!-- Card body -->
+            <div class="card-body">
+                <div class="alert alert-danger" role="alert">
+                    Some fields are missing
+                </div>
+                <form id="myForm">
+                    <div class="row">
+                        <div class="mb-3 col-5">
+                            <label for="inputCard" class="form-label">Card #</label>
+                            <input type="text" class="form-control" id="inputCard" aria-describedby="cardHelp" required
+                                maxlength="16" minlength="16" placeholder="XXXXXXXXXXXXXXXX" />
+                        </div>
+
+                        <div class="mb-3 col-3">
+                            <label for="inputCVC" class="form-label">CVC #</label>
+                            <input type="text" class="form-control" id="inputCVC" aria-describedby="cvcHelp" required
+                                maxlength="3" minlength="3" placeholder="000" />
+                        </div>
+
+                        <div class="mb-3 col-4">
+                            <label for="inputAmount" class="form-label">Amount</label>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+                                    id="inputAmount" />
+                            </div>
+                        </div>
+                        <!--nombre y apellido-->
+
+
+                        <div class="mb-6 col-6">
+                            <label for="inputFirstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="inputCity" aria-describedby="inputCity" required
+                                placeholder="Irene" />
+                        </div>
+
+                        <div class="mb-6 col-6">
+                            <label for="inputLastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="inputCity" aria-describedby="inputLastName"
+                                required placeholder="Rodriguez" />
+                        </div>
+
+                        <!--ciudad, estado y postal code-->
+
+
+                        <div class="mb-6 col-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity" aria-describedby="inpuCity" required
+                                placeholder="Barcelona" />
+                        </div>
+
+                        <div class="mb-3 col-3">
+                            <label for="inputState" class="form-label">State</label>
+                            <select class="form-select" aria-label="Default select example" id="inputState">
+                                <option selected>Pick State</option>
+                                <option value="1">Spain</option>
+                                <option value="2">Ireland</option>
+                                <option value="3">Italy</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3 col-3">
+                            <label for="inputPostalCode" class="form-label">Postal Code</label>
+                            <input type="text" class="form-control" id="inputPostalCode"
+                                aria-describedby="inputPostalCode" required placeholder="XXXX" required maxlength="4"
+                                minlength="4" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" />
+                        </div>
+
+
+                        <!-- ✔️ Checkboxes a la izquierda -->
+
+                        <div class="row align-items-start mt-3">
+
+
+
+                            <div class="col-6 d-flex gap-3 bg-secondary-subtle p-3 rounded">
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1"><i
+                                            class="fa-brands fa-cc-visa"></i></label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2"><i
+                                            class="fa-brands fa-cc-mastercard"></i></label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="option2">
+                                    <label class="form-check-label" for="inlineCheckbox2"><i
+                                            class="fa-solid fa-credit-card"></i></label>
+                                </div>
+
+                            </div>
+
+                            <div class="mb-6 col-6">
+                                <div class="w-100">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Mesage</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <label for="floatingTextarea2" class="text-secondary d-block mt-1 d-inline-block">Add
+                                    any notes
+                                    here</label>
+                            </div>
+                        </div>
+
+
+                        <!--cancel y send-->
+
+
+                        <div class="card">
+                            <div class="card-header text-end">
+                                <button class="btn btn-secondary me-md-2" type="button">Cancel</button>
+                                <button class="btn btn-primary" type="button">Send</button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
